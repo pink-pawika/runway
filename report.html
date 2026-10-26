@@ -109,12 +109,11 @@
 <p class="kicker">MGT 409 · AI Foundations for Managers</p>
 <h1>Runway</h1>
 <p class="tagline">how long will my money last?</p>
-<p class="meta">Pink Pawika · October 25, 2026</p>
+<p class="meta">Pink Pawika</p>
 <p class="repo"><a href="https://github.com/pink-pawika/runway">https://github.com/pink-pawika/runway</a></p>
 <p>Runway reads a student’s receipts, bank-statement photos, and I-20 living-expense figure, then shows the month’s spending against one budget that is meant to be what is left after rent.</p>
 
 <div class="links">
-  <p><strong>App.</strong> Local only, at <a href="http://127.0.0.1:8000">http://127.0.0.1:8000</a> after the README setup. It is not hosted online.</p>
   <p><strong>Model.</strong> <code>gpt-6-luna</code> through the course <code>PORTKEY_API_KEY</code>. A personal <code>OPENAI_API_KEY</code> is used only when the course key is empty, and then <code>OPENAI_MODEL</code> is required.</p>
 </div>
 
@@ -413,6 +412,18 @@
     <tr><td>4</td><td>Stop showing rent on months with no other activity</td><td>The trend shows only months with recorded data</td></tr>
     <tr><td>5</td><td>Build a hostile receipt the gateway will accept that still tries to change an amount</td><td>A screenshot of the review card catching it</td></tr>
     <tr><td>6</td><td>Time a second person loading one month of photos</td><td>A measured time to compare with the 30-minute manual baseline</td></tr>
+  </tbody>
+</table>
+<h3>After that: a small shop, not only a student</h3>
+<p>The six steps above finish the student case. The same pipeline can serve a small business, because the hard part is already the same: a person photographs a statement, the model only reads it, and code compares the month with what is left after a known fixed cost. What changes is the question. A student asks how far the living allowance goes after rent. A shop asks how far this month’s cash goes after rent, payroll, and the other bills that repeat. None of this is built yet.</p>
+<table>
+  <thead>
+    <tr><th>#</th><th>Step</th><th>How I’ll know it worked</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>7</td><td>Replace the I-20 path with fixed costs the owner types: rent, payroll, and other bills that repeat. Code subtracts those from the month and shows what is left.</td><td>A sample shop gets that sentence with no I-20 upload</td></tr>
+    <tr><td>8</td><td>Keep money coming in as its own total. A student statement leaves green amounts out of spending. A shop needs customer payments beside what was spent, and neither number should be saved as the other.</td><td>One statement shows both totals</td></tr>
+    <tr><td>9</td><td>Let the people who run the shop share one set of books and one review queue.</td><td>A second login opens the same month without copying the database</td></tr>
   </tbody>
 </table>
 
