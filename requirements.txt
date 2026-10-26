@@ -1,0 +1,14 @@
+python-dotenv==1.2.4
+openai==3.37.0
+pydantic-ai-slim[openai]==2.61.0
+httpx==0.28.1
+portkey-ai==2.3.4
+fastapi==0.162.0
+uvicorn==0.54.0
+python-multipart==0.0.32
+pdfplumber==0.11.10
+pypdfium2==5.14.0
+pillow==13.0.0
+pillow-heif==1.8.1
+reportlab==4.4.4
+cryptography==48.0.1

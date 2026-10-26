@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>RUNWAY</title>
+  <link rel="stylesheet" href="/static/app.css?v=32">
+</head>
+<body class="logged-out">
+  <section id="gate" class="gate">
+    <form id="gate-form" class="gate-card">
+      <p class="gate-kicker">Boarding</p>
+      <h1 class="brand">RUNWAY</h1>
+      <p class="tagline">how long will my money last?</p>
+      <p id="gate-copy">Choose an email and a password. This account keeps your own spending.</p>
+      <label>Email
+        <input id="gate-email" type="email" autocomplete="username" required maxlength="254">
+      </label>
+      <label>Password
+        <input id="gate-password" type="password" autocomplete="new-password" required minlength="8" maxlength="200">
+      </label>
+      <label id="gate-confirm-label">Confirm password
+        <input id="gate-confirm" type="password" autocomplete="new-password" minlength="8" maxlength="200">
+      </label>
+      <p id="gate-error" class="banner" hidden></p>
+      <p id="gate-alert" class="banner" data-alert hidden></p>
+      <button id="gate-submit" type="submit" class="primary">Create account</button>
+      <button id="gate-switch" type="button" class="ghost">I already have an account</button>
+    </form>
+  </section>
+  <div class="app">
+    <header class="top">
+      <h1 class="brand">RUNWAY</h1>
+      <p class="tagline">how long will my money last?</p>
+      <div id="account" class="account" hidden>
+        <span id="account-email"></span>
+        <button type="button" id="sign-out" class="ghost">Sign out</button>
+      </div>
+      <p id="status" class="status" role="status"></p>
+      <p id="app-banner" class="banner" data-alert hidden></p>
+    </header>
+    <main>
+      <section id="panel-add" class="panel" aria-label="Activity"></section>
+      <section id="panel-review" class="panel" aria-label="Review" hidden></section>
+      <section id="panel-dashboard" class="panel" aria-label="Analytics" hidden></section>
+      <section id="panel-i20" class="panel" aria-label="I-20" hidden></section>
+    </main>
+    <aside id="usage" class="usage" aria-label="Usage" hidden>
+      <p id="usage-last"></p>
+      <p id="usage-today"></p>
+    </aside>
+    <nav class="tabs" aria-label="Sections">
+      <button type="button" class="tab" data-tab="add" aria-selected="true">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 7h14M5 12h14M5 17h10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <span>Activity</span>
+      </button>
+      <button type="button" class="tab" data-tab="dashboard">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19V10M10 19V5M15 19v-7M20 19V8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <span>Analytics</span>
+      </button>
+      <button type="button" class="tab" data-tab="review">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 12.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>Review</span>
+        <span id="review-badge" class="badge" hidden></span>
+      </button>
+      <button type="button" class="tab" data-tab="i20">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4h7l5 5v11H7zM14 4v5h5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        <span>I-20</span>
+      </button>
+    </nav>
+  </div>
+  <noscript>Runway needs JavaScript to show your activity.</noscript>
+  <script src="/static/chart.umd.js"></script>
+  <script src="/static/app.js?v=32"></script>
+</body>
+</html>

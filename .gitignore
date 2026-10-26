@@ -1,0 +1,16 @@
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+.pytest_cache/
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+data/users/
+data/uploads/
+uploads/
+.fresh-clone-check/

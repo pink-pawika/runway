@@ -1,0 +1,17 @@
+FAKE I-20 FINANCIAL SECTION
+This file is not a real I-20. It is sample data for SpendSmart tests and screenshots.
+
+Student name: Avery Sample
+Date of birth: 2004-01-15
+SEVIS ID: N1234567890
+School address: 1 Sample Quad, New Haven, CT 06511
+
+Estimated average costs for 9 months
+Tuition and fees: $52,000
+Living expenses: $18,000
+Expenses of dependents: $0
+Other expenses: $1,200
+
+How the student will pay
+On-campus employment: $3,000
+Family funds: $68,200
