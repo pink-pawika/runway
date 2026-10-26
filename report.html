@@ -51,6 +51,17 @@
     text-transform: uppercase;
   }
   .meta { color: var(--muted); font-size: 10.5pt; margin: 0 0 8px; }
+  .repo {
+    margin: 2px 0 14px;
+    font-family: "Avenir Next", "Segoe UI", sans-serif;
+    font-size: 13pt;
+    font-weight: 700;
+  }
+  .repo a {
+    color: var(--accent);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
   .links {
     margin: 14px 0 8px;
     padding: 12px 14px;
@@ -99,11 +110,11 @@
 <h1>Runway</h1>
 <p class="tagline">how long will my money last?</p>
 <p class="meta">Pink Pawika · October 25, 2026</p>
+<p class="repo"><a href="https://github.com/pink-pawika/runway">https://github.com/pink-pawika/runway</a></p>
 <p>Runway reads a student’s receipts, bank-statement photos, and I-20 living-expense figure, then shows the month’s spending against one budget that is meant to be what is left after rent.</p>
 
 <div class="links">
   <p><strong>App.</strong> Local only, at <a href="http://127.0.0.1:8000">http://127.0.0.1:8000</a> after the README setup. It is not hosted online.</p>
-  <p><strong>Repository.</strong> <a href="https://github.com/pink-pawika/runway">https://github.com/pink-pawika/runway</a></p>
   <p><strong>Model.</strong> <code>gpt-6-luna</code> through the course <code>PORTKEY_API_KEY</code>. A personal <code>OPENAI_API_KEY</code> is used only when the course key is empty, and then <code>OPENAI_MODEL</code> is required.</p>
 </div>
 
